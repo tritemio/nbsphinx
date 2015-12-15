@@ -56,6 +56,23 @@ except Exception:
 # -- Options for HTML output ----------------------------------------------
 
 html_title = project + ' version ' + release
+html_theme = 'alabaster'
+html_theme_options = {
+    'github_user': 'spatialaudio',
+    'github_repo': 'nbsphinx',
+    'github_banner': True,
+    'show_related': True,
+}
+html_sidebars = {
+    '**': [
+        'about.html',
+        #'globaltoc.html',
+        #'localtoc.html',
+        'navigation.html',
+        'searchbox.html',
+        #'sourcelink.html',
+    ]
+}
 
 # -- Options for LaTeX output ---------------------------------------------
 
