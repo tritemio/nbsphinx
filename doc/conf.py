@@ -32,7 +32,7 @@ highlight_language = 'none'
 #nbsphinx_codecell_lexer = 'ipython3'
 
 # Width of input/output prompts used in CSS:
-#nbsphinx_prompt_width = '8ex'
+nbsphinx_prompt_width = '8ex'
 
 # -- The settings below this line are not specific to nbsphinx ------------
 
@@ -56,6 +56,7 @@ except Exception:
 # -- Options for HTML output ----------------------------------------------
 
 html_title = project + ' version ' + release
+html_theme = 'dotted'
 
 # -- Options for LaTeX output ---------------------------------------------
 
