@@ -31,6 +31,9 @@ highlight_language = 'none'
 # Default Pygments lexer for syntax highlighting in code cells
 #nbsphinx_codecell_lexer = 'ipython3'
 
+# If True, the (executed) notebooks are copied into the HTML output directory:
+#nbsphinx_save_notebooks = True
+
 # -- The settings below this line are not specific to nbsphinx ------------
 
 master_doc = 'index'
