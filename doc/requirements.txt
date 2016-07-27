@@ -1,3 +1,9 @@
+pip>=8.1.2
+setuptools>=0.25.1
 sphinx>=1.4
+pandas>=0.18.1
+lmfit
 nbsphinx
 ipykernel
+seaborn
+
