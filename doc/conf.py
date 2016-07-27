@@ -3,6 +3,29 @@
 
 # Use sphinx-quickstart to create your own conf.py file!
 # After that, you have to edit a few things.  See below.
+import sys, os
+
+on_rtd = os.environ.get('READTHEDOCS', None) == 'True'
+
+print("python exec: " + sys.executable)
+print("sys.path: " + ';'.join(sys.path))
+import setuptools
+print("setuptools: %s, %s" % (setuptools.__version__, setuptools.__file__))
+try:
+    import numpy
+    print("numpy: %s, %s" % (numpy.__version__, numpy.__file__))
+except ImportError:
+    print("no numpy")
+try:
+    import scipy
+    print("scipy: %s, %s" % (scipy.__version__, scipy.__file__))
+except ImportError:
+    print("no scipy")
+try:
+    import pandas
+    print("pandas: %s, %s" % (pandas.__version__, pandas.__file__))
+except ImportError:
+    print("no pandas")
 
 # Select nbsphinx and, if needed, add a math extension (mathjax or pngmath):
 extensions = [
